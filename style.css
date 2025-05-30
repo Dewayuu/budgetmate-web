@@ -1,0 +1,628 @@
+body {
+    padding: 0px !important;
+    margin: 0px !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+.main-header {
+    background-color: #7ab5ac;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 100;
+}
+
+.header-info {
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    float: left;
+    margin: 15px;
+}
+
+.header-info a{
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover{
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    float: left;
+}
+
+a:hover {
+    background-color: #a8d6cf;
+}
+
+nav {
+    font-family: "Red Hat Display", serif;
+    font-size: 15px;
+    position: absolute;
+    right: 5px;
+}
+
+.top {
+    padding-top: 5%;
+    /* background-image: url(assets/newbg.jpg);  */
+    height: 300px;
+    background-image: linear-gradient(#c8f5ee, #7ab5ac); 
+    /* background-color: #81bfb7; */
+    /* background-size: cover; */
+}
+
+.judul {
+    font-family: 'Raleway', serif;
+    font-weight: 800;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.judul-info {
+    font-family: "Red Hat Display", serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    font-size: 18px;
+}
+
+/* .fitur{
+    background-color: white;
+    top: 400px;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 200;
+} */
+
+.fitur {
+    background-color: white;
+    padding: 5px 0; 
+    margin-bottom: 30px; 
+    height: auto; 
+    
+}
+
+.fitur-header {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fitur-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.fitur-info {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background: #c6e6e3;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.fitur-info:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fitur-info .gambar {
+    position: absolute;
+    inset: 0px 10px 20px 80px;
+    transition: 0.5s;
+}
+
+.fitur-info:hover .gambar {
+    position: absolute;
+    inset: -60px 20px 40px 80px;
+}
+
+.fitur-info h3 {
+    font-family: 'Raleway', serif;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(95px);
+    transition: 0.5s;
+}
+
+.fitur-info:hover h3 {
+    transform: translateY(45px);
+    transition: 0.5s;
+}
+
+.fitur-info p {
+    font-family: 'Red Hat Display', serif;
+    font-size: 14px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    text-align: center;
+}
+
+.fitur-info:hover p {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(5px);
+    transition: 0.5s;
+    text-align: center;
+}
+
+/* .fitur {
+    background-color: white;
+    padding: 5px 0; 
+    margin-bottom: 30px; 
+    height: auto; 
+}
+
+
+.fitur-header {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fitur-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 100%;
+    
+ }
+
+ .fitur-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #c6e6e3;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+ }
+
+ .fitur-info:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+ }
+
+ .fitur-info h3 {
+    font-family: 'Raleway', serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fitur-info p {
+    font-family: 'Red Hat Display', serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+ .gambar{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+ } */
+
+/* .review{
+    background-color: white;
+    top: 1000px;
+    right: 0;
+    left: 0;
+    height: 50px;
+    z-index: 200;
+} */
+
+.artikel {
+    background-color: #ebf3f2;
+    padding: 5px 0; 
+    margin-top: 5px; 
+    height: auto; 
+}
+
+.artikel-header {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.artikel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+
+}
+
+.artikel-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 10px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.artikel-info img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.artikel-info h3 {
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-family: 'Red Hat Display', serif;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7ab5ac;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    padding: 9px 19px;
+    font-size: 15px;
+    background-color: #8dccc2;
+}
+
+.review {
+    display: flex;
+    gap: 4px;
+    min-height: auto;
+    column-gap: 20px;
+    min-width: 900px;
+    position: relative;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left {
+    width: 500px;
+}
+
+.right {
+    width: 700px;
+}
+
+.review-header {
+    font-family: 'Raleway', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    padding: 10px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.review-info h3 {
+    font-family: 'Red Hat Display', serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.review-info p {
+    font-family: 'Red Hat Display', serif;
+    font-size: 14px;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+footer {
+    background-image: linear-gradient(#c8f5ee, #7ab5ac);
+    margin-top: 10px;
+    padding: 10px;
+ }
+ 
+.main-footer { 
+    text-align: center;    
+    width: 100%;
+}
+
+.footer-heading {
+    font-family: 'Raleway', serif;
+    font-size: 18px;
+}
+
+.footer-desc {
+    font-family: 'Red Hat Display', serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.info-center {
+    font-family: 'Red Hat Display', serif;
+    font-size: 15px;
+    margin-top: 3px;
+}
+ 
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* about html */
+.about {
+    padding-top: 85px;
+    display: flex;
+    min-height: auto;
+    gap: 4px;
+    align-items: center;
+}
+
+.about-container{
+    padding-left: 25px;
+
+}
+
+.about-left {
+    margin: 20px;
+    max-width: 850px;
+    padding-right: 0px;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;}
+
+.about-right {
+    margin: 20px;
+    width: 500px;
+    padding-left: 40px;
+}
+
+.about-right img {
+    width: 300px;
+    height: auto;
+}
+
+.about-title {
+    font-family: 'Raleway', serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-desc {
+    font-family: 'Red Hat Display', serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.about-ctf {
+    font-family: 'Raleway', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #7ab5ac;
+
+}
+
+.about-btn {
+    font-family: 'Red Hat Display', serif;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7ab5ac;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.about-btn:hover {
+    font-size: 15px;
+    background-color: #8dccc2;
+}
+
+
+@media (max-width: 1300px) {
+    .judul {
+        font-size: 60px;
+        margin-top: 55px;
+    }
+
+    .judul-info {
+        font-size: 18px;
+    }
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about {
+        padding-top: 15px;
+        margin-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .judul {
+        font-size: 60px;
+        margin-top: 65px;
+    }
+
+    .judul-info {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .about-container {
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;    
+        padding-left: 0px;
+    }
+
+    .about-left, .about-right {
+        padding-left: 0px;
+    }
+
+    .footer-heading {
+        font-size: 16px;
+    }
+
+    .footer-desc, .info-center {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 720px) {
+    .judul {
+        font-size: 40px;
+        margin-top: 85px;
+    }
+
+    .judul-info {
+        margin: 10px;
+        font-size: 15px;
+    }
+    
+    .fitur-header {
+        font-size: 18px;
+    }
+
+    .artikel-header {
+        font-size: 18px;
+        margin: 40px;
+    }
+
+    .review-header {
+        font-size: 18px;
+    }
+
+    .review {
+        display: block;
+        min-width: unset;
+
+    }
+
+    .about {
+        display: block;
+        min-width: unset;
+    }
+
+    .left {
+        width: auto;
+    }
+
+    .right {
+        width: auto;
+    }
+
+    .about-left {
+        width: auto;
+    }
+
+    .about-right {
+        text-align: center;        
+        width: auto;
+    }
+
+    .about-title {
+        font-size: 23px;
+    }
+
+    .about-desc, .about-ctf {
+        font-size: 13px;
+    }
+
+    .about-btn {
+        padding: 7px 17px;
+        font-size: 14px;
+    }
+}
